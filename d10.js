@@ -4,4 +4,15 @@ let join = john + "\<\>" + doe;
 
 console.log(join);
 
-let obj = {name: "Paul", surname: "Murray", age: 30}
+const obj = {
+name: "Paul", 
+surname: "Murray", 
+email: "pm161118@outlook.com",
+};
+
+delete obj.email
+
+console.log(obj);
+
+// need to revisit and find out why its not logging in the console
+
