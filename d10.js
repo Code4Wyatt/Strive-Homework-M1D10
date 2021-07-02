@@ -23,7 +23,7 @@ console.log(arrayTen);
 // also not logging in the console for some reason
 
 let numArray = function random(array) {
-    for  (let a=[], i=0<100;++i) a[i]=i;
+    for  (let a=[], i=0;i<100;++i) a[i]=i;
     let tmp, current, top = array.length;
     if (top) while(--top) {
         current = Math.floor(Math.random() * (top + 1));
@@ -36,9 +36,6 @@ let numArray = function random(array) {
 console.log(numArray);
 
 // not logging in console
-
-
-}
 
 // Wrote a function to get the MAX and the MIN from the previously created array
 
