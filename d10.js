@@ -28,3 +28,11 @@ console.log(numArray);
 
 // not logging in console
 
+const minMax = function() { 
+    console.log(Math.max(...numArray));
+    console.log(Math.min(...numArray));
+    return minMax
+}
+
+console.log(minMax)
+
