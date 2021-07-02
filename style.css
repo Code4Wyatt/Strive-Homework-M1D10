@@ -1,3 +1,7 @@
 body {
     max-width: 1900px;
 }
+
+h1 {
+    text-align: center;
+}
