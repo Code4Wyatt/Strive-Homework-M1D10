@@ -16,3 +16,4 @@ console.log(obj);
 
 // need to revisit and find out why its not logging in the console
 
+const arrayTen = ["This", "Is", "An", "Array", "and", "in", "it", "is", "10", "Strings"];
