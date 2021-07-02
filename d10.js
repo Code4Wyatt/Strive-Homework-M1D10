@@ -22,17 +22,28 @@ console.log(arrayTen);
 
 // also not logging in the console for some reason
 
-let numArray = new Array(100);
-
+let numArray = function random(array) {
+    for  (let a=[], i=0<100;++i) a[i]=i;
+    let tmp, current, top = array.length;
+    if (top) while(--top) {
+        current = Math.floor(Math.random() * (top + 1));
+        tmp = array[current]
+        array[current] = array[top];
+        array[top] = tmp;
+    }
+    return array;
+}
 console.log(numArray);
 
 // not logging in console
 
-const minMax = function() { 
-    console.log(Math.max(...numArray));
-    console.log(Math.min(...numArray));
-    return minMax
+
 }
 
-console.log(minMax)
+// Wrote a function to get the MAX and the MIN from the previously created array
+
+const minMax = function () {
+    console.log(Math.max(...numArray));
+    console.log(Math.min(...numArray));
+}
 
