@@ -26,6 +26,17 @@ ul {
     font-size: 20px;
 }
 
+td {
+    border-style: ridge;
+    border-color: green;
+    border-width: 1px;
+}
+
 .hidden {
     visibility: hidden;
+}
+
+.border {
+    border-style: dotted;
+    border-color: red;
 }
