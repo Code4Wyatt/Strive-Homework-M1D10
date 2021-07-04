@@ -10,15 +10,19 @@ surname: "Murray",
 email: "pm161118@outlook.com",
 };
 
-delete obj.email
+delete obj.email;
 
 console.log(obj);
 
 // need to revisit and find out why its not logging in the console
 
-const arrayTen = ["This", "Is", "An", "Array", "and", "in", "it", "is", "10", "Strings"];
+let stringArray = []
 
-console.log(arrayTen);
+for (let i = 0; i < 10; i++) {
+    stringArray.push("This is new string number:" + i);
+}
+
+console.log(stringArray);
 
 // also not logging in the console for some reason
 
@@ -31,7 +35,7 @@ let numArray = function random(array) {
         array[current] = array[top];
         array[top] = tmp;
     }
-    return array;
+    return numArray;
 }
 console.log(numArray);
 
@@ -39,8 +43,13 @@ console.log(numArray);
 
 // Wrote a function to get the MAX and the MIN from the previously created array
 
-const minMax = function () {
+const minMax = function (numArray) {
     console.log(Math.max(...numArray));
     console.log(Math.min(...numArray));
 }
 
+console.log(minMax);
+
+// Create an array of arrays, in which every array has 10 random numbers
+
+let array = [[], [], []]; 
