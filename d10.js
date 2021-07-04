@@ -14,38 +14,32 @@ delete obj.email;
 
 console.log(obj);
 
-// need to revisit and find out why its not logging in the console
+// 24) Create an array with 10 strings in it
 
-let stringArray = []
+let stringArray = [] // created an empty array
 
-for (let i = 0; i < 10; i++) {
-    stringArray.push("This is new string number:" + i);
+for (let i = 0; i < 10; i++) {  // used for loop to give 10 values from 0 to 10
+    stringArray.push("This is new string number:" + i); // pushed string and concatenated with i to give 10 strings
 }
 
 console.log(stringArray);
 
-// also not logging in the console for some reason
+// 26) Create an array with 100 random numbers in it
 
-let numArray = function random(array) {
-    for  (let a=[], i=0;i<101;++i) a[i]=i;
-    let tmp, current, top = array.length;
-    if (top) while(--top) {
-        current = Math.floor(Math.random() * (top + 1));
-        tmp = array[current]
-        array[current] = array[top];
-        array[top] = tmp;
-    }
-    return numArray;
+let numArray = [];  // Created new empty array
+
+for (let i = 0; i < 100; i++) {  // Used for loop to call numbers 0 to 100
+    numArray.push(Math.round(Math.random() * 100)); // Pushed loop i to empty array with random numbers from 0 to 100
 }
+
 console.log(numArray);
 
-// not logging in console
+// 27) Wrote a function to get the MAX and the MIN from the previously created array
 
-// Wrote a function to get the MAX and the MIN from the previously created array
-
-const minMax = function (numArray) {
+const minMax = function (min, max) {
     console.log(Math.max(...numArray));
     console.log(Math.min(...numArray));
+    return minMax;
 }
 
 console.log(minMax);
