@@ -36,13 +36,36 @@ console.log(numArray);
 
 // 27) Wrote a function to get the MAX and the MIN from the previously created array
 
-const minMax = function (min, max) {
-    console.log(Math.max(...numArray));
-    console.log(Math.min(...numArray));
-    return minMax;
-}
+let randomNumbers = [];
+      for (let i = 0; i < 100; i++) {
+        randomNumbers.push(Math.round(Math.random() * 100));
+      }
 
-console.log(minMax);
+      console.log(randomNumbers);
+
+      function getMaxMin(numbers) {
+        let max = numbers[0];
+        let min = numbers[0];
+
+        /*for (let i = 0; i < numbers.length - 1; i++) {
+            if (numbers[i] > max){
+                max = numbers[i]
+            }
+            
+            if (numbers[i]< min) {
+                min = numbers[i]
+            }
+        }*/
+
+        for (let number of numbers) {
+          max = number > max ? number : max;
+          min = number < min ? number : min;
+        }
+
+        return { max, min };
+      }
+
+      console.log(getMaxMin(randomNumbers));
 
 // Create an array of arrays, in which every array has 10 random numbers
 
