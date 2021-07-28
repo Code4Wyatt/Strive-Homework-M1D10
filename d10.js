@@ -1,6 +1,6 @@
-let john = "John "
-let doe = " Doe"
-let join = john + "\<\>" + doe;
+let a = "John "
+let b = " Doe"
+let join = a + "<>" + b;
 
 console.log(join);
 
@@ -36,16 +36,10 @@ console.log(numArray);
 
 // 27) Wrote a function to get the MAX and the MIN from the previously created array
 
-let randomNumbers = [];
-      for (let i = 0; i < 100; i++) {
-        randomNumbers.push(Math.round(Math.random() * 100));
-      }
-
-      console.log(randomNumbers);
 
       function getMaxMin(numbers) {
-        let max = numbers[0];
-        let min = numbers[0];
+        let max = numbers[0]
+        let min = numbers[0]
 
         /*for (let i = 0; i < numbers.length - 1; i++) {
             if (numbers[i] > max){
@@ -58,8 +52,8 @@ let randomNumbers = [];
         }*/
 
         for (let number of numbers) {
-          max = number > max ? number : max;
-          min = number < min ? number : min;
+          max = number > max ? number : max
+          min = number < min ? number : min
         }
 
         return { max, min };
@@ -67,6 +61,43 @@ let randomNumbers = [];
 
       console.log(getMaxMin(randomNumbers));
 
-// Create an array of arrays, in which every array has 10 random numbers
+     // 28) Create an array of arrays, in which every array has 10 random numbers
+    
+     let arrayOfArrays = []  // creating first array
 
-let array = [[], [], []]; 
+     for (let i = 0; i < 10; i++) { // for loop to create 10 inner arrays
+       let innerArray = []
+       for (let j = 0; j < 10; j++) { // for loop to create 10 random numbers 
+         innerArray.push(Math.round(Math.random() * 10))  // using .push to 10 random numbers
+       }
+       arrayOfArrays.push(innerArray)
+     }
+
+
+     // 29 Create a function that gets 2 arrays and returns the longest one
+
+     function returnLargest(array1, array2) {
+       return array1.length >= array2.length ? array1 : array2  // if array1 is more than or equal to array 2 return array 1, if not array 2
+     }
+     console.log(returnLargest([5,6,7], [4,5]))
+
+    // 30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+    
+    function returnLargestSum(array1, array2) {
+
+      let sum1 = 0
+
+      for (let number of array1) {
+        sum1 += number
+      }
+
+      let sum2 = 0
+
+      for (let number of array2) {
+        sum2 += number
+      }
+
+      return sum1 >= sum2 ? sum1 : sum2
+    }
+
+    console.log(returnLargestSum([100, 999], [100, 22]))
