@@ -101,3 +101,17 @@ console.log(numArray);
     }
 
     console.log(returnLargestSum([100, 999], [100, 22]))
+
+  //  31) Get element with ID "container" from the page
+
+  const ids = document.getElementById('container')
+
+  // 32) Get every "td" from the page
+
+  const tds = document.querySelectorAll('td')
+
+  // 33) Create a cycle that prints the text inside every td of the page
+
+ tds.forEach((td) => {
+   td.innerText = "text";
+ });
