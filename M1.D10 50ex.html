@@ -313,7 +313,9 @@
 
       const addRedBackground = function () {
         const links = document.querySelector("a");
-        links.classList.add("red-bg");
+        for (let i = 0; i < a.length; i++) {
+          links.classList.add("red-bg");
+        }
       };
 
       addRedBackground();
