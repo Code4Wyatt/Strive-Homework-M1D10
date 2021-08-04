@@ -317,12 +317,13 @@
           link.classList.add("bg-red");
         });
       };
+
       addRedBackground();
 
       // 38) Console log "Page loaded" when the page is correctly loaded
 
       window.onload = function () {
-        console.log("Page loaded");
+        alert("Page loaded");
       };
 
       // 39) Write a function to add new items to a UL
@@ -333,6 +334,7 @@
         li.innerText = "new list item";
         ul.appendChild(li);
       };
+
       addLi();
 
       // 40) Write a function to empty a list
@@ -341,6 +343,7 @@
         const ul = document.querySelector("ul");
         ul.innerHTML = "";
       };
+
       emptyList();
     </script>
   </body>
