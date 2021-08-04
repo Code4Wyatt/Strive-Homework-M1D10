@@ -59,7 +59,7 @@ console.log(numArray);
         return { max, min };
       }
 
-      console.log(getMaxMin(randomNumbers));
+      console.log(getMaxMin(numArray));
 
      // 28) Create an array of arrays, in which every array has 10 random numbers
     
@@ -72,6 +72,8 @@ console.log(numArray);
        }
        arrayOfArrays.push(innerArray)
      }
+
+     console.log(arrayOfArrays)
 
 
      // 29 Create a function that gets 2 arrays and returns the longest one
@@ -104,14 +106,24 @@ console.log(numArray);
 
   //  31) Get element with ID "container" from the page
 
-  const ids = document.getElementById('container')
+  const ids = document.getElementById('container');
 
   // 32) Get every "td" from the page
 
-  const tds = document.querySelectorAll('td')
+  const tds = document.querySelectorAll('td');
 
   // 33) Create a cycle that prints the text inside every td of the page
 
- tds.forEach((td) => {
-   td.innerText = "text";
- });
+  tds.forEach((td) => {
+    td.innerText = "text";
+  });
+
+  // 34) Write function to change header of page
+
+  const newHeader = function (content) {
+    const header = document.querySelector('h1');
+    header.innerText = content;
+
+  };
+
+  newHeader("New Header");
