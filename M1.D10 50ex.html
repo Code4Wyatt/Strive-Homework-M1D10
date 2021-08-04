@@ -274,9 +274,9 @@
 
       // 33) Create a cycle that prints the text inside every td of the page
 
-      tds.forEach((td) => {
-        td.innerText = "text";
-      });
+      //tds.forEach((td) => {
+      //  td.innerText = "text";
+      // });
 
       // 34) Write function to change header of page
 
@@ -308,6 +308,15 @@
           tr.classList.add("test");
         });
       };
+
+      // 37) Write a function to add a red background to every link in the page
+
+      const addRedBackground = function () {
+        const links = document.querySelector("a");
+        links.classList.add("red-bg");
+      };
+
+      addRedBackground();
     </script>
   </body>
 </html>

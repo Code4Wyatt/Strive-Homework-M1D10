@@ -1,42 +1,46 @@
 body {
-    max-width: 1900px;
+  max-width: 1900px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    color:  aqua;
+  color: aqua;
 }
 
 .table {
-    border-style: solid;
-    border-radius: 1%;
+  border-style: solid;
+  border-radius: 1%;
 }
 
 p {
-    margin: 50px;
-    font-weight:bolder;
-    font-size: 30px;
+  margin: 50px;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
 ul {
-    font-weight:bolder;
-    font-size: 20px;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 td {
-    border-style: ridge;
-    border-color: green;
-    border-width: 1px;
+  border-style: ridge;
+  border-color: green;
+  border-width: 1px;
 }
 
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .border {
-    border-style: dotted;
-    border-color: red;
+  border-style: dotted;
+  border-color: red;
+}
+
+.red-bg {
+  background-color: red;
 }
