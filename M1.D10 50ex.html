@@ -312,13 +312,36 @@
       // 37) Write a function to add a red background to every link in the page
 
       const addRedBackground = function () {
-        const links = document.querySelector("a");
-        for (let i = 0; i < a.length; i++) {
-          links.classList.add("red-bg");
-        }
+        const links = document.querySelectorAll("a");
+        links.forEach((link) => {
+          link.classList.add("bg-red");
+        });
+      };
+      addRedBackground();
+
+      // 38) Console log "Page loaded" when the page is correctly loaded
+
+      window.onload = function () {
+        console.log("Page loaded");
       };
 
-      addRedBackground();
+      // 39) Write a function to add new items to a UL
+
+      const addLi = function () {
+        const ul = document.querySelector("ul");
+        const li = document.createElement("li");
+        li.innerText = "new list item";
+        ul.appendChild(li);
+      };
+      addLi();
+
+      // 40) Write a function to empty a list
+
+      const emptyList = function () {
+        const ul = document.querySelector("ul");
+        ul.innerHTML = "";
+      };
+      emptyList();
     </script>
   </body>
 </html>
